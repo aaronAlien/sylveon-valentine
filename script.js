@@ -21,8 +21,8 @@ const fetchPokemon = async () => {
 
     const headerDiv = document.querySelector(".header-div");
     headerDiv.innerHTML = `
-    <h1>｡ ₊°༺❤︎ my valentine? ❤︎༻°₊ ｡</h1>
-  <img src="${spriteUrl}" alt="${sylveon}">  
+    <h1><img src="${spriteUrl}" alt="${sylveon}"> <a href='/index.html'>｡ ₊°༺❤︎ my valentine? ❤︎༻°₊ ｡</a><img src="${spriteUrl}" alt="${sylveon}"> </h1>
+   
   <h1 id="yay"></h1>    
     `;
 

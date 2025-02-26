@@ -42,10 +42,13 @@ img {
 }
 
 #header {
-  font-size: 70px;
   font-family: "Gaegu", "Sour Gummy", "Arial Narrow", Arial, sans-serif;
   font-weight: 700;
   margin: 0;
+}
+
+.header-div h1 {
+  font-size: 5rem;
 }
 
 .container {
@@ -129,17 +132,28 @@ footer {
 @media (max-width: 600px) {
 
   .container {
-    width: auto;
+    width: 90%;
     padding: 1rem;
-    margin: 0 1rem;
+    margin: 0 1rem 2rem 1rem;
   }
 
   .header-div {
-    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: .75rem auto;
+    max-width: 50%;
   }
 
-  #header {
-    font-size: 50px;
+  .header-div h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0 1rem;
+  }
+
+  .header-div img:first-of-type {
+    display: none;
   }
 
   .options-container {
@@ -157,4 +171,9 @@ footer {
   #divider {
     display: none;
   }
+
+  footer {
+    position: relative;
+  }
+
 }
